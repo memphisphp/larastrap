@@ -1,0 +1,13 @@
+/app/database/*.sqlite
+/bootstrap/compiled.php
+/vendor
+/vendor/*
+.idea*
+
+composer.phar
+composer.lock
+/public/assets/vendors
+
+.DS_Store
+
+*.swp
