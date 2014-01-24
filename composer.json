@@ -1,10 +1,10 @@
 {
-	"name": "laravel/laravel",
-	"description": "The Laravel Framework.",
-	"keywords": ["framework", "laravel"],
+	"name": "larastrap",
+	"description": "A generic starting point for a site based on laravel.",
+	"keywords": ["laravel"],
 	"license": "MIT",
 	"require": {
-		"laravel/framework": "4.1.*"
+		"laravel/framework": "4.1.*",
 	},
 	"autoload": {
 		"classmap": [
