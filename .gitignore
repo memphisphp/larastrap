@@ -6,7 +6,6 @@
 
 composer.phar
 composer.lock
-/public/assets/vendors
 
 .DS_Store
 
