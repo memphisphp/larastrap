@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% block head %}
+	{% block meta %}
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{% endblock %}
+
+	<!-- Start Stylesheets -->
+	{% block style %}
+		<!-- Bootstrap -->
+		<link href="/assets/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/assets/vendors/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
+
+		<!-- Font Awesome -->
+		<link href="/assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+		<!-- Project specific CSS -->
+		<link href="/assets/css/main.css" rel="stylesheet">
+	{% endblock %}
+	<!-- End Stylesheets -->
+
+
+	<!-- Start Header Javascript -->
+	{% block headscript %}
+		<!-- JQuery -->
+		<script src="/assets/vendors/jquery/jquery.min.js"></script>
+
+		<!-- Bootstrap -->
+		<script src="/assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+
+		<!-- Project specific JS -->
+		<script src="/assets/js/main.js"></script>
+	{% endblock %}
+
+	<!-- HTML5 Shiv -->
+	<!--[if lt IE 9]>
+		<script src="/assets/vendors/html5shiv/html5shiv.js"></script>
+	<![endif]-->
+
+	<!-- End Header Javascript -->
+
+	<title>{% block title %}Larastrap Project Title{% endblock %}</title>
+{% endblock %}
+</head>
+<body>
+	<!-- Begin Navbar -->
+	{% block navbar %}
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">{% block navbar_brand %}Larastrap Project{% endblock %}</a>
+			</div>
+			<div class="navbar-collapse collapse">
+				{% block navbar_left %}
+					<!-- <ul class="nav navbar-nav">
+						<li><a href="/">Home</a></li>
+					</ul> -->
+				{% endblock %}
+				{% block navbar_right %}
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="/login">Login</a></li>
+					</ul>
+				{% endblock %}
+			</div>
+		</div>
+	</div>
+	{% endblock %}
+	<!-- End Navbar -->
+
+	<!-- Start Entire Page Wrap -->
+	{% block body_wrap %}
+	<div id="wrap">
+		<!-- Begin Page Content -->
+		<div class="container">
+			{% block body_content %}{% endblock %}
+		</div>
+		<!-- End Page Content -->
+	</div>
+	{% endblock %}
+	<!-- End Entire Page Wrap -->
+
+	<!-- Start Footer -->
+	{% block footer %}
+	<div id="footer">
+		<div class="container">
+			{% block footer_content %}
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4"><H6>Powered by Larastrap Project</H6></div>
+				</div>
+			{% endblock %}
+		</div>
+	</div>
+	{% endblock %}
+	<!-- End Footer -->
+</body>
+</html>
