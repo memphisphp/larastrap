@@ -14,3 +14,7 @@
 Route::get('/', function() {
 	return View::make('index');
 });
+
+Route::get('/blog', function() {
+	return View::make('blog');
+});
