@@ -24,14 +24,6 @@
 
 	<!-- Start Header Javascript -->
 	{% block headscript %}
-		<!-- JQuery -->
-		<script src="/assets/vendor/jquery/dist/jquery.min.js"></script>
-
-		<!-- Bootstrap -->
-		<script src="/assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-
-		<!-- Project specific JS -->
-		<script src="/assets/js/main.js"></script>
 	{% endblock %}
 
 	<!-- HTML5 Shiv -->
@@ -104,5 +96,16 @@
 	</div>
 	{% endblock %}
 	<!-- End Footer -->
+
+	{% block footerscript %}
+	<!-- JQuery -->
+	<script src="/assets/vendor/jquery/dist/jquery.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="/assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	<!-- Project specific JS -->
+	<script src="/assets/js/main.js"></script>
+	{% endblock %}
 </body>
 </html>
