@@ -9,15 +9,7 @@
 
 	<!-- Start Stylesheets -->
 	{% block style %}
-		<!-- Bootstrap -->
-		<link href="/assets/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-		<link href="/assets/vendor/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
-
-		<!-- Font Awesome -->
-		<link href="/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
-		<!-- Project specific CSS -->
-		<link href="/assets/css/main.css" rel="stylesheet">
+		{% include 'layouts.segments.style' %}
 	{% endblock %}
 	<!-- End Stylesheets -->
 
@@ -98,14 +90,7 @@
 	<!-- End Footer -->
 
 	{% block footerscript %}
-	<!-- JQuery -->
-	<script src="/assets/vendor/jquery/dist/jquery.min.js"></script>
-
-	<!-- Bootstrap -->
-	<script src="/assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-
-	<!-- Project specific JS -->
-	<script src="/assets/js/main.js"></script>
+		{% include 'layouts.segments.js' %}
 	{% endblock %}
 </body>
 </html>
