@@ -7,14 +7,14 @@ It includes only packages that have application across multiple site purposes an
 -----
 
 ## Included
-* Laravel 4.1.x
+* Laravel 5.1.x
 * Twitter Bootstrap 3.1.1
 * jQuery 2.1.0
 * Font-Awesome 4.0.3
 * HTML5 Shiv 3.7.0
 
 ## Requirements
-* PHP 5.3.7 or later
+* PHP 5.5 or later
 * MCrypt PHP Extension
 * [Composer](http://www.getcomposer.org)
 * [Bower](http://bower.io/)
